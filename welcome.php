@@ -80,6 +80,7 @@
                 background-size: 555px 300px;
                 margin-right: -3px;
                 transition: all 0.5s ease;
+				margin: 20px 0;
               }
 
           .content{
@@ -105,6 +106,7 @@
             	display: inline-block;
             	margin-right: -3px;
             	transition: all 0.5s ease;
+				margin: 20px 0;
               }
 
           .icon3{
@@ -118,6 +120,7 @@
             	display: inline-block;
             	margin-right: -3px;
             	transition: all 0.5s ease;
+				margin: 20px 0;
               }
 
           h2 h3 h4{
@@ -149,6 +152,10 @@
               }
           .footer{
           	width: 100%;
+			position: fixed;
+			z-index: 10;
+			bottom: 0;
+			left: 0;
           }
           .watermark{
               display: inline-block;
