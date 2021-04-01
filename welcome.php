@@ -48,6 +48,10 @@
 
               .container{
                 width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
               }
 
               .wrapper{
@@ -63,9 +67,7 @@
                 position: relative;
                 width: 100%;
                 height: 300px;
-                border-radius: 2px;
-                overflow: hidden;
-                margin: 20px 0;
+                margin: 30px 0;
               }
 
               .icon{
@@ -80,7 +82,6 @@
                 background-size: 555px 300px;
                 margin-right: -3px;
                 transition: all 0.5s ease;
-				margin: 20px 0;
               }
 
           .content{
@@ -106,7 +107,6 @@
             	display: inline-block;
             	margin-right: -3px;
             	transition: all 0.5s ease;
-				margin: 20px 0;
               }
 
           .icon3{
@@ -120,7 +120,6 @@
             	display: inline-block;
             	margin-right: -3px;
             	transition: all 0.5s ease;
-				margin: 20px 0;
               }
 
           h2 h3 h4{
@@ -162,6 +161,7 @@
               width: 100%;
               text-align: center;
               margin: 20px 0;
+            color: white;
           }
           .dieckmandesigns{
               -ms-transition: 0.4s ease-in-out;
@@ -173,10 +173,23 @@
               -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
               transform: rotate(360deg);
           }
+          @media only screen and (max-width: 850px) {
+            .icon, .icon2, .icon3{
+            	width: 100%;
+            }
+          }
+          @media only screen and (min-width: 850px) {
+            .icon, .icon2, .icon3{
+            	width: 80%;
+            }
+          }
+          @media only screen and (min-width: 1200px) {
+            .icon, .icon2, .icon3{
+            	width: 50%;
+            }
+          }
 		</style>
 		<script type="text/javascript">
-        	$( document ).ready(function() {
-            });
 		</script>
 	</head>
 	<body>
@@ -184,6 +197,7 @@
         <a href="https://www.facebook.com/josh.dieckman" class="fa fa-facebook" target="_blank"></a>
        	<a href="https://twitter.com/Iceb3rgS1im" class="fa fa-twitter" target="_blank"></a>
         <a href="https://www.linkedin.com/in/joshua-dieckman/" class="fa fa-linkedin" target="_blank"></a>
+       </div>
         <div class="wrapper">
           <div class="col-md-12">
             <div class="box">
@@ -224,16 +238,14 @@
             </div>
           </div>
         </div>
-      </div>
 	</body>
   <footer>
 	<center>
-		<hr>
       	<div class="watermark">
            <h4>Powered by:</h4>
-           <img class="dieckmandesigns" src="/images/Dieckman Designs Logo.png" height="150px" width="150px">
+           <img class="dieckmandesigns" src="/images/Dieckman Designs Logo.png" height="100px" width="100px">
         </div>
-		<p>&copy; 2020 Dieckman Designs</p>
+		<p>&copy; 2021 Dieckman Designs</p>
 		<p>Contact information: <a href="mailto:info@dieckmandesigns.com">info@dieckmandesigns.com</a>.</p>
 	</center>
 </footer>
